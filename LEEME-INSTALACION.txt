@@ -1,0 +1,15 @@
+EASY METRIC CALIBRATION - VERSIÓN SILO BASADA EN EMC.zip
+
+1. Abre index.html con Live Server.
+2. Revisa la portada: conserva el diseño claro verde/blanco y el slider de 3 imágenes.
+3. Prueba todas las páginas del menú, chatbot, WhatsApp y herramienta técnica.
+4. Coloca logotipos autorizados en imagenes/clientes/.
+5. Valida los datos indicados en DATOS-POR-VALIDAR-ANTES-DE-PUBLICAR.txt.
+6. Para GitHub Pages, sube el contenido interno del proyecto a la raíz del repositorio.
+
+
+VERSIÓN V3
+- La portada fue aligerada.
+- Se añadieron las páginas experiencia/ y proveedores/.
+- Los proyectos y Nosotros siguen disponibles desde la nueva navegación interna y el pie de página.
+- Los logotipos autorizados de proveedores pueden colocarse en imagenes/proveedores/.
