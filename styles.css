@@ -1051,3 +1051,94 @@ body{
     overflow:hidden;
   }
 }
+/* ==================================================
+   CORRECCIÓN DEL HERO Y CARRUSEL EN CELULAR
+================================================== */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: auto;
+    padding: 105px 0 65px;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  /* Evita que el carrusel desaparezca */
+  .hero-visual {
+    display: block !important;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .hero-card-main,
+  .slider {
+    width: 100%;
+  }
+
+  .slider {
+    position: relative;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-mini-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 92px 0 55px;
+  }
+
+  .hero-h1 {
+    font-size: clamp(42px, 15vw, 58px);
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slider {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-mini-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card-overlay {
+    padding: 45px 16px 16px;
+  }
+
+  .hero-card-overlay-title {
+    font-size: 17px;
+  }
+}
