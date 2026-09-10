@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Solicitar Cotización Técnica | Easy Metric Calibration</title>
+<meta name="description" content="Herramienta de cotización para calibración de flujo, presión, temperatura, montaje y Unidad de Inspección. Organiza datos técnicos y envíalos por WhatsApp.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://easycal.lat/herramientas/preparar-cotizacion/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<meta name="theme-color" content="#5a9e3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Solicitar Cotización Técnica | Easy Metric Calibration">
+<meta property="og:description" content="Herramienta de cotización para calibración de flujo, presión, temperatura, montaje y Unidad de Inspección. Organiza datos técnicos y envíalos por WhatsApp.">
+<meta property="og:url" content="https://easycal.lat/herramientas/preparar-cotizacion/">
+<meta property="og:image" content="https://easycal.lat/imagenes/emc/identidad-emc.jpg">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('set','autoConfig',false,'1611906160722579');
+fbq('init','1611906160722579');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1611906160722579&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Easy Metric Calibration", "url": "https://easycal.lat/", "telephone": "+52 55 7916 6300", "description": "Laboratorio de calibración industrial de flujo, presión y temperatura, y Unidad de Inspección para medición de volúmenes de aguas nacionales.", "areaServed": "MX"}</script>
+</head><body><nav class="site-nav">
+<a class="nav-logo" href="../../index.html">
+  <img src="../../imagenes/logo.jpg" alt="Easy Metric Calibration">
+  <span class="nav-logo-copy"><strong>Easy Metric</strong><small>Calibration</small></span>
+</a>
+<button class="menu-toggle" type="button" data-menu aria-label="Abrir menú" aria-expanded="false">☰</button>
+<div class="nav-links"><a href="../../index.html" class="">Inicio</a><a href="../../servicios/" class="">Servicios</a><a href="../../acreditaciones/" class="">Acreditaciones</a><a href="../../unidad-verificacion/" class="">Unidad de Inspección</a><a href="../../casos-de-exito/" class="">Proyectos</a><a href="../../nosotros/" class="">Nosotros</a><a href="../../herramientas/preparar-cotizacion/" class="nav-cta">Solicitar cotización</a></div>
+</nav><main><section class="internal-hero" style="--hero-image:url('../../imagenes/emc/ingeniero-programacion.jpg')">
+<div class="internal-hero-overlay"></div>
+<div class="container internal-hero-content fade-up">
+  <div class="hero-eyebrow">Herramienta para ingeniería y compras</div>
+  <h1 class="hero-h1">Solicita una <span class="accent">cotización técnica</span></h1>
+  <p class="hero-lead">Organiza los datos del instrumento una sola vez y envíalos por WhatsApp a nuestro equipo. Esto reduce tiempos de ida y vuelta entre compras, ingeniería y servicio técnico.</p>
+</div>
+</section>
+<section class="quote-section">
+<div class="container quote-layout">
+  <form class="quote-form" id="quoteForm">
+    <div class="form-head"><span class="tag">Datos de la solicitud</span><h2>Información para revisar el servicio</h2><p>Completa lo que tengas disponible. Los campos marcados con * son esenciales para iniciar.</p></div>
+    <div class="form-grid two">
+      <label>Empresa *<input id="empresa" required autocomplete="organization"></label>
+      <label>Responsable *<input id="nombre" required autocomplete="name"></label>
+      <label>Área o puesto<input id="puesto" placeholder="Compras, Mantenimiento, Calidad..."></label>
+      <label>Teléfono<input id="telefono" inputmode="tel" autocomplete="tel"></label>
+      <label>Correo<input id="correo" type="email" autocomplete="email"></label>
+      <label>Servicio requerido *
+        <select id="servicio" required>
+          <option value="">Selecciona</option>
+          <option>Calibración de flujo</option>
+          <option>Calibración de presión</option>
+          <option>Calibración de temperatura</option>
+          <option>Montaje y comisionamiento</option>
+          <option>Unidad de Inspección</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-divider"><span>Datos técnicos</span></div>
+    <div class="form-grid two">
+      <label>Instrumento *<input id="instrumento" required placeholder="Ej. medidor Coriolis, manómetro, RTD"></label>
+      <label>Cantidad<input id="cantidad" type="number" min="1"></label>
+      <label>Marca<input id="marca"></label>
+      <label>Modelo<input id="modelo"></label>
+      <label>Número de serie<input id="serie"></label>
+      <label>Rango y unidad<input id="rango" placeholder="Ej. 1 a 100 PSI"></label>
+      <label>Ubicación<input id="ubicacion" placeholder="Ciudad / planta"></label>
+      <label>Modalidad<select id="modalidad"><option>Por definir</option><option>En laboratorio</option><option>En sitio</option></select></label>
+      <label>Fecha requerida<input id="fecha" type="date"></label>
+    </div>
+    <label class="wide-label">Detalles técnicos<textarea id="detalle" rows="5" placeholder="Fluido, conexión, puntos, tolerancia, condición del equipo, requisito de auditoría, datos del pozo, etc."></textarea></label>
+    <label class="consent"><input type="checkbox" id="consent" required><span>Confirmo que los datos son correctos y deseo generar la solicitud por WhatsApp.</span></label>
+    <button class="form-btn" type="submit">Generar solicitud en WhatsApp →</button>
+    <p class="form-message" id="formMessage" aria-live="polite"></p>
+  </form>
+
+  <aside class="quote-preview-card">
+    <div><span class="tag">Vista previa</span><h3>Así recibirá EMC tu solicitud</h3></div>
+    <pre id="quotePreview"></pre>
+    <div class="quote-actions">
+      <button class="btn-secondary" id="copyQuote" type="button">Copiar datos</button>
+      <a class="btn-primary" id="quoteWhatsapp" href="https://wa.me/525579166300" target="_blank" rel="noopener">Abrir WhatsApp</a>
+    </div>
+    <div class="quote-tip"><b>Para compras:</b> si no tienes todos los datos técnicos, envía marca, modelo, rango, cantidad y una foto del instrumento después de iniciar el chat.</div>
+  </aside>
+</div>
+</section>
+</main><footer class="site-footer">
+<div class="container footer-grid">
+  <div class="footer-brand">
+    <img src="../../imagenes/logo.jpg" alt="Easy Metric Calibration">
+    <p>Calibración industrial de flujo, presión y temperatura, con atención técnica para procesos industriales en México.</p>
+  </div>
+  <div>
+    <h3>Servicios</h3>
+    <a href="../../servicios/calibracion-flujo/">Calibración de flujo</a>
+    <a href="../../servicios/calibracion-presion/">Calibración de presión</a>
+    <a href="../../servicios/calibracion-temperatura/">Calibración de temperatura</a>
+    <a href="../../servicios/montaje-comisionamiento/">Montaje y comisionamiento</a>
+  </div>
+  <div>
+    <h3>Empresa</h3>
+    <a href="../../acreditaciones/">Acreditaciones</a>
+    <a href="../../unidad-verificacion/">Unidad de Inspección</a>
+    <a href="../../casos-de-exito/">Proyectos</a>
+    <a href="../../nosotros/">Nosotros</a>
+  </div>
+  <div>
+    <h3>Contacto</h3>
+    <a href="tel:+525579166300">55 7916 6300</a>
+    <a href="https://wa.me/525579166300?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20con%20Easy%20Metric%20Calibration." target="_blank" rel="noopener">WhatsApp técnico</a>
+    <a href="../../herramientas/preparar-cotizacion/">Solicitar cotización</a>
+    <a href="../../acreditaciones/#documentos">Documentación</a>
+  </div>
+</div>
+<div class="container footer-bottom">
+  <span>© 2026 Easy Metric Calibration S.A. de C.V.</span>
+  <span>Cuautitlán Izcalli, Estado de México · Atención nacional</span>
+</div>
+</footer>
+<a class="wa-float" href="https://wa.me/525579166300?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20con%20Easy%20Metric%20Calibration." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+<span class="wa-icon">✆</span><span><b>WhatsApp técnico</b><small>Solicita una cotización</small></span>
+</a>
+<div class="chatbot" id="chatbot">
+  <button class="chat-open" id="chatOpen" type="button" aria-label="Abrir asistente técnico">?</button>
+  <button class="chat-invite" id="chatInvite" type="button"><strong>¿Qué necesitas calibrar?</strong><span>Consulta requisitos técnicos</span></button>
+  <div class="chat-window hidden" id="chatWindow" role="dialog" aria-label="Asistente técnico EMC">
+    <div class="chat-head"><div><strong>Asistente EMC</strong><span>Orientación técnica inicial</span></div><button class="chat-close" id="chatClose" type="button" aria-label="Cerrar">×</button></div>
+    <div class="chat-messages" id="chatMessages"><div class="msg"><div class="bubble">Puedo orientarte sobre flujo, presión, temperatura, Unidad de Inspección, certificados y datos necesarios para cotizar.</div></div></div>
+    <div class="quick">
+      <button type="button" data-question="Calibración de flujo">Flujo</button>
+      <button type="button" data-question="Calibración de presión">Presión</button>
+      <button type="button" data-question="Calibración de temperatura">Temperatura</button>
+      <button type="button" data-question="Unidad de Inspección">Inspección</button>
+      <button type="button" data-question="Quiero cotizar">Cotizar</button>
+    </div>
+    <form class="chat-form" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Escribe tu pregunta..." maxlength="300"><button type="submit" aria-label="Enviar">➤</button></form>
+  </div>
+</div>
+<script src="../../app.js"></script>
+<script src="../../chatbot.js"></script></body></html>
