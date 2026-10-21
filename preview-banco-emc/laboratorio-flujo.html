@@ -13,15 +13,22 @@
 .emc-flow-schematic{display:none;position:absolute;width:100%;height:100%;inset:0;z-index:1;pointer-events:none}.emc-flow-schematic.is-fallback{display:block}.emc-schematic-flow{stroke-dashoffset:0}.emc-flow-schematic.is-running .emc-schematic-flow{animation:emc-water-move .8s linear infinite}@keyframes emc-water-move{to{stroke-dashoffset:-41}}@media(max-width:650px){.emc-flow-schematic.is-fallback{transform:scale(1.25);transform-origin:center center}}
 
 body.emc-lab-visible .chatbot,body.emc-lab-visible .wa-float-wide {opacity:0;pointer-events:none;transition:opacity .23s ease}
+
+/* Vista pública: solamente el banco 3D, sin controles ni lecturas simuladas */
+.emc-flow-panel{display:none!important}
+.emc-flowlab-layout{grid-template-columns:minmax(0,1fr)!important}
+.emc-flowcanvas-shell{height:660px}
+.emc-flowlab{padding:62px 0}
+@media(max-width:650px){.emc-flowcanvas-shell{height:430px}.emc-flowlab{padding:50px 0}}
 </style></head><body><section aria-labelledby="emc-flow-title" class="emc-flowlab" id="calibracion-interactiva">
 <div class="emc-flowlab-inner">
 <div class="emc-flowlab-header">
-<div><div class="emc-flow-eyebrow"><i></i> LABORATORIO INTERACTIVO / EMC</div><h2 id="emc-flow-title">Así se comprueba <em>el flujo.</em></h2><p>Explora cómo se hace circular agua por un patrón de referencia y un medidor electromagnético bajo calibración. Gira el equipo, modifica el caudal y observa las lecturas comparadas.</p></div>
-<div class="emc-flow-disclaimer"><b>SIMULACIÓN DIDÁCTICA</b><span>Instrumentos y cifras ilustrativos. No corresponde a un certificado ni sustituye una calibración real.</span></div>
+<div><div class="emc-flow-eyebrow"><i></i> LABORATORIO INTERACTIVO / EMC</div><h2 id="emc-flow-title">Así se comprueba <em>el flujo.</em></h2><p>Conoce visualmente el recorrido del agua por nuestro banco de calibración. Gira y acerca el montaje para identificar el depósito, la bomba, el patrón de referencia y el medidor electromagnético bajo prueba.</p></div>
+<div class="emc-flow-disclaimer"><b>MODELO VISUAL INTERACTIVO</b><span>Representación educativa del montaje. No muestra mediciones reales ni sustituye una calibración.</span></div>
 </div>
 <div class="emc-flowlab-layout">
 <div class="emc-flowcanvas-shell" id="emc-flow-shell">
-<div class="emc-flowcanvas-top"><span><span class="emc-flow-status-dot"></span> BANCO DE CALIBRACIÓN · DN80</span><small id="emc-flow-status">SISTEMA EN REPOSO</small></div>
+<div class="emc-flowcanvas-top"><span><span class="emc-flow-status-dot"></span> BANCO DE CALIBRACIÓN · DN80</span><small id="emc-flow-status">CIRCULACIÓN ILUSTRATIVA</small></div>
 <canvas aria-label="Modelo tridimensional interactivo de sistema de calibración de caudal. Incluye tinaco, bomba, patrón de referencia y medidor electromagnético" id="emc-flow-canvas" role="img"></canvas><svg aria-label="Representación industrial del circuito de calibración: tinaco, bomba, patrón de referencia, medidor Badger Meter, tubería de retorno y lectura comparativa" class="emc-flow-schematic" id="emc-flow-schematic" role="img" viewbox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <lineargradient id="pipeM" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fbffff"></stop><stop offset=".18" stop-color="#b8c9cf"></stop><stop offset=".40" stop-color="#566e77"></stop><stop offset=".55" stop-color="#c8d9dc"></stop><stop offset=".76" stop-color="#7d959b"></stop><stop offset="1" stop-color="#d9e7e5"></stop></lineargradient>
@@ -83,7 +90,7 @@ body.emc-lab-visible .chatbot,body.emc-lab-visible .wa-float-wide {opacity:0;poi
 <div class="emc-flow-legend"><span><i class="color-water"></i> Recorrido del agua</span><span><i class="color-reference"></i> Patrón maestro</span><span><i class="color-uut"></i> Medidor bajo prueba</span></div>
 <div class="emc-flow-fallback" hidden="" id="emc-flow-fallback">La visualización 3D requiere un navegador compatible con WebGL. Los controles de comparación siguen disponibles.</div>
 </div>
-<aside aria-label="Controles del banco de calibración" class="emc-flow-panel">
+<aside class="emc-flow-panel" aria-hidden="true" inert hidden>
 <div class="emc-flow-panel-kicker">SIMULADOR DE COMPARACIÓN <span>DEMO</span></div>
 <h3>Prueba de caudal</h3>
 <p class="emc-flow-panel-sub">Agua circulando por dos medidores conectados en serie.</p>
