@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Solicitar Cotización Técnica | Easy Metric Calibration</title>
+<meta name="description" content="Herramienta de cotización para calibración de flujo, presión, temperatura, montaje y Unidad de Inspección. Organiza datos técnicos y envíalos por WhatsApp.">
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<meta name="theme-color" content="#5a9e3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Solicitar Cotización Técnica | Easy Metric Calibration">
+<meta property="og:description" content="Herramienta de cotización para calibración de flujo, presión, temperatura, montaje y Unidad de Inspección. Organiza datos técnicos y envíalos por WhatsApp.">
+<meta property="og:url" content="https://easycal.lat/herramientas/preparar-cotizacion/">
+<meta property="og:image" content="https://easycal.lat/imagenes/emc/identidad-emc.jpg">
+<!-- Pixel de Meta desactivado únicamente en la vista previa -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Easy Metric Calibration", "url": "https://easycal.lat/", "telephone": "+52 55 7916 6300", "description": "Laboratorio de calibración industrial de flujo, presión y temperatura, y Unidad de Inspección para medición de volúmenes de aguas nacionales.", "areaServed": "MX"}</script>
+
+<style id="emc-quote-v2-style">
+.emc-quote-v2-page{--qink:#17281c;--qgreen:#468d45;--qmint:#eaf4e8;--qborder:#d6e5d3}
+.emc-quote-v2-page .internal-hero{min-height:285px!important}
+.emc-quote-v2-page .internal-hero-content{padding-top:62px;padding-bottom:55px}
+.emc-quote-v2-page .internal-hero-content .hero-h1{font-size:clamp(38px,5vw,62px);max-width:760px}
+.emc-quote-v2-page .internal-hero-content .hero-lead{max-width:720px;font-size:16px}
+.qv2-shell{background:#f5f9f3;padding:55px 0 90px;border-top:1px solid #deeadb}
+.qv2-wrapper{width:min(1160px,calc(100% - 40px));margin:auto}
+.qv2-intro{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:26px}
+.qv2-intro h2{margin:0 0 8px;font:900 clamp(31px,3.4vw,47px)/1.05 "Barlow Condensed",Arial,sans-serif;letter-spacing:-.02em;color:var(--qink)}
+.qv2-intro h2 em{font-style:normal;color:var(--qgreen)}
+.qv2-intro p{margin:0;max-width:640px;color:#667766;font-size:14px;line-height:1.7}
+.qv2-time{padding:11px 15px;border-radius:99px;border:1px solid #d8e9d5;background:#fff;color:#466d49;white-space:nowrap;font-size:12px;font-weight:700}
+.qv2-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.qv2-step-marker{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid #dbe8d8;border-radius:13px;background:#fff;color:#7a8a79;text-align:left;font-weight:700;font-size:13px}
+.qv2-step-marker b{display:grid;place-items:center;flex:none;width:27px;height:27px;border-radius:50%;background:#edf3eb;color:#6a876d;font-size:12px}
+.qv2-step-marker.is-active{border-color:#88bd89;color:#286b3b;box-shadow:0 7px 20px #376d4512}
+.qv2-step-marker.is-active b,.qv2-step-marker.is-done b{background:#3f8d4d;color:#fff}
+.qv2-step-marker.is-done{color:#426747}
+.qv2-progress{height:4px;border-radius:30px;background:#dce9da;overflow:hidden;margin-bottom:21px}
+.qv2-progress span{display:block;height:100%;width:33.33%;border-radius:30px;background:linear-gradient(90deg,#4b8f46,#9bcf64);transition:width .3s}
+.qv2-grid{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(290px,.84fr);gap:23px;align-items:start}
+.qv2-form,.qv2-aside{border:1px solid var(--qborder);background:#fff;border-radius:25px;box-shadow:0 13px 36px #24452b09}
+.qv2-form{padding:30px}
+.qv2-pane[hidden]{display:none!important}
+.qv2-eyebrow{display:block;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#42834d;font-weight:800;margin-bottom:11px}
+.qv2-pane h3{font:800 33px/1.1 "Barlow Condensed",Arial,sans-serif;color:#1c2d1f;margin:0 0 8px}
+.qv2-description{color:#6b796c;line-height:1.6;font-size:13px;margin:0 0 24px}
+.qv2-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.qv2-service{display:flex;align-items:center;gap:12px;min-height:96px;padding:16px 14px;border:1px solid #d9e7d6;background:#fbfdfa;border-radius:15px;text-align:left;font-family:inherit;color:#233427;cursor:pointer;transition:border .18s,background .18s,transform .18s,box-shadow .18s}
+.qv2-service:hover{transform:translateY(-2px);border-color:#7db881;box-shadow:0 8px 20px #315d3920}
+.qv2-service.is-selected{background:#eff8ec;border:2px solid #58a760;box-shadow:0 0 0 3px #4eae5120}
+.qv2-service-icon{width:49px;height:49px;display:grid;place-items:center;border-radius:13px;background:#e8f2e6;color:#357e48;flex:none}
+.qv2-service-icon svg{width:29px;height:29px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.qv2-service strong,.qv2-service small{display:block}
+.qv2-service strong{font-size:14px;line-height:1.3}
+.qv2-service small{font-size:11px;color:#728574;margin-top:5px;line-height:1.3}
+.qv2-service:last-child{grid-column:1/-1;min-height:70px}
+.qv2-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 13px}
+.qv2-field{display:flex;flex-direction:column;gap:7px;min-width:0;font-size:12px;font-weight:800;color:#49624c}
+.qv2-field.wide{grid-column:1/-1}
+.qv2-field small{font-size:11px;color:#7d8d80;font-weight:400}
+.qv2-field input,.qv2-field select,.qv2-field textarea{appearance:auto;display:block;min-height:47px;width:100%;max-width:100%;font:400 14px "Barlow",Arial,sans-serif;color:#243528;background:#fcfefb;border:1px solid #cbdcca;border-radius:11px;padding:11px 13px;outline:none;transition:box-shadow .18s,border-color .18s}
+.qv2-field input:focus,.qv2-field select:focus,.qv2-field textarea:focus{border-color:#5ca260;box-shadow:0 0 0 3px #79b67925}
+.qv2-field input.is-invalid,.qv2-field select.is-invalid{border-color:#c64e46!important;box-shadow:0 0 0 3px #de786a18}
+.qv2-field textarea{resize:vertical;min-height:93px}
+.qv2-details{border:1px solid #dce7d9;border-radius:12px;padding:11px 14px;margin-top:19px;background:#fafcf9}
+.qv2-details summary{color:#436a4a;cursor:pointer;font-size:13px;font-weight:700}
+.qv2-details .qv2-fields{padding-top:16px}
+.qv2-tip{font-size:12px;line-height:1.6;color:#5d7463;background:#f1f7f0;border-radius:11px;padding:13px 14px;margin:18px 0 0}
+.qv2-nav{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid #e4eee3;padding-top:20px;margin-top:27px}
+.qv2-primary,.qv2-back{min-height:47px;padding:12px 19px;border-radius:11px;border:1px solid #488d4c;font-size:13px;font-weight:800;cursor:pointer;font-family:inherit}
+.qv2-primary{background:#458d43;color:white;box-shadow:0 8px 18px #417f3422}
+.qv2-primary:hover{background:#306d34}
+.qv2-back{border-color:#d5e2d1;background:#fff;color:#446149}
+.qv2-nav .qv2-primary{margin-left:auto}
+.qv2-privacy{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:#5b6b5c;line-height:1.5;margin:20px 0 0}
+.qv2-privacy input{width:18px;height:18px;flex:none;accent-color:#448c42;margin-top:1px}
+.qv2-help{font-size:11px;color:#738474;line-height:1.55;margin-top:12px}
+.qv2-message{margin-top:12px;font-size:12px;color:#b0443e;min-height:18px}
+.qv2-aside{position:sticky;top:90px;padding:22px;background:#fdfefc}
+.qv2-visual{border-radius:19px;padding:16px;background:radial-gradient(ellipse at 50% 20%,#eff7ee,#dfecdf);border:1px solid #d1e3d1;overflow:hidden}
+.qv2-visual-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#3c6b42;font-size:11px;font-weight:800;letter-spacing:.08em}
+.qv2-visual-head span:last-child{background:#fff9;border:1px solid #d2e3d1;padding:5px 9px;border-radius:20px;letter-spacing:0}
+.qv2-illustration{height:225px;display:grid;place-items:center}
+.qv2-illustration svg{width:min(100%,300px);max-height:220px;overflow:visible}
+.qv2-visual-foot{text-align:center;font-size:12px;color:#6c806b;margin-top:-3px}
+.qv2-progress-bar{height:7px;background:#cbdcca;border-radius:20px;margin:15px 0 7px;overflow:hidden}
+.qv2-progress-bar span{display:block;height:100%;width:0%;background:linear-gradient(90deg,#3c8c4b,#a4d978);transition:width .4s}
+.qv2-completeness{display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:#386b42}
+.qv2-next-check{font-size:12px;color:#677a67;line-height:1.6;padding:15px 3px 4px}
+.qv2-next-check strong{color:#27482f}
+.qv2-summary{margin-top:14px;border-top:1px solid #e0eade;padding-top:17px}
+.qv2-summary h4{font:800 21px/1.1 "Barlow Condensed",Arial,sans-serif;color:#253c28;margin:0 0 11px}
+.qv2-summary-lines{display:grid;gap:8px;font-size:12px;color:#526651}
+.qv2-summary-lines p{margin:0;display:flex;justify-content:space-between;gap:12px}
+.qv2-summary-lines strong{max-width:64%;text-align:right;overflow-wrap:anywhere;color:#223b28}
+.qv2-message-details{margin-top:15px;border:1px solid #d6e4d3;border-radius:10px;background:#f8fbf7;padding:10px}
+.qv2-message-details summary{cursor:pointer;font-size:12px;font-weight:800;color:#3d6b43}
+.qv2-message-details pre{font:12px/1.65 "Barlow",sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;max-height:280px;overflow:auto;margin:13px 0 0;color:#405943}
+.qv2-aside-actions{display:flex;gap:9px;margin-top:12px}
+.qv2-aside-actions button{border:1px solid #c8ddc5;background:#fff;color:#396746;padding:11px 13px;border-radius:10px;cursor:pointer;font-weight:700;font-size:12px}
+.qv2-aside-note{margin:12px 0 0;font-size:11px;line-height:1.5;color:#7b8a7d}
+@media(max-width:900px){.qv2-grid{grid-template-columns:1fr}.qv2-aside{position:static;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}.qv2-visual{grid-row:span 2}.qv2-summary{margin:0;border:0;padding:0}.qv2-aside-actions,.qv2-message-details,.qv2-aside-note{grid-column:2}.qv2-illustration{height:170px}.qv2-illustration svg{max-height:168px}}
+@media(max-width:650px){.qv2-shell{padding:28px 0 65px}.qv2-wrapper{width:min(100% - 24px,520px)}.qv2-intro{align-items:start}.qv2-time{display:none}.qv2-intro h2{font-size:33px}.qv2-steps{gap:5px}.qv2-step-marker{padding:9px 6px;gap:5px;font-size:10px;border-radius:10px;justify-content:center}.qv2-step-marker b{width:23px;height:23px;font-size:10px}.qv2-form{padding:20px 17px;border-radius:18px}.qv2-pane h3{font-size:30px}.qv2-choices{grid-template-columns:1fr 1fr;gap:8px}.qv2-service{min-height:85px;padding:10px 8px;gap:7px;flex-direction:column;text-align:center}.qv2-service-icon{width:39px;height:39px;border-radius:10px}.qv2-service-icon svg{width:23px;height:23px}.qv2-service strong{font-size:12px}.qv2-service small{font-size:10px}.qv2-service:last-child{grid-column:1/-1;flex-direction:row;justify-content:center;min-height:61px}.qv2-fields{grid-template-columns:1fr}.qv2-field.wide{grid-column:1}.qv2-aside{display:block;order:-1;padding:13px;border-radius:17px}.qv2-illustration{height:127px}.qv2-illustration svg{max-height:133px}.qv2-visual{padding:10px;border-radius:13px}.qv2-visual-head{font-size:10px}.qv2-visual-foot{font-size:10px}.qv2-progress-bar{margin:8px 0 4px}.qv2-summary{display:none}.qv2-aside-actions{display:none}.qv2-message-details{display:none}.qv2-aside-note{display:none}.qv2-next-check{padding:9px 2px 0;margin:0;font-size:10px}.qv2-nav .qv2-primary{flex:1;max-width:230px}.emc-quote-v2-page .chat-invite{display:none}}
+@media(prefers-reduced-motion:reduce){.qv2-progress span,.qv2-progress-bar span,.qv2-service{transition:none}}
+</style>
+</head><body class="emc-quote-v2-page"><nav class="site-nav">
+<a class="nav-logo" href="../index.html">
+  <img src="../imagenes/logo.jpg" alt="Easy Metric Calibration">
+  <span class="nav-logo-copy"><strong>Easy Metric</strong><small>Calibration</small></span>
+</a>
+<button class="menu-toggle" type="button" data-menu aria-label="Abrir menú" aria-expanded="false">☰</button>
+<div class="nav-links"><a href="../index.html" class="">Inicio</a><a href="../servicios/" class="">Servicios</a><a href="../acreditaciones/" class="">Acreditaciones</a><a href="../unidad-verificacion/" class="">Unidad de Inspección</a><a href="../casos-de-exito/" class="">Proyectos</a><a href="../nosotros/" class="">Nosotros</a><a href="../herramientas/preparar-cotizacion/" class="nav-cta">Solicitar cotización</a></div>
+</nav><main><section class="internal-hero" style="--hero-image:url('../imagenes/emc/ingeniero-programacion.jpg')"><div class="internal-hero-overlay"></div>
+<div class="container internal-hero-content fade-up"><div class="hero-eyebrow">Herramienta rápida para mantenimiento, ingeniería y compras</div><h1 class="hero-h1">Cotiza tu <span class="accent">calibración</span> de forma sencilla.</h1><p class="hero-lead">Selecciona el servicio, identifica el equipo y compártenos tus datos. EMC recibe una solicitud organizada y lista para revisar.</p></div></section>
+
+<section class="qv2-shell" aria-label="Cotizador técnico simplificado">
+<div class="qv2-wrapper">
+<div class="qv2-intro"><div><h2>Tu cotización, <em>más sencilla.</em></h2><p>Cuéntanos qué instrumento tienes y cómo contactarte. Los detalles especiales se pueden agregar sin complicar tu solicitud.</p></div><span class="qv2-time">3 pasos · Aproximadamente 2 minutos</span></div>
+<div class="qv2-steps" role="list" aria-label="Progreso de cotización">
+<div class="qv2-step-marker is-active" data-qv2-marker="1" role="listitem"><b>1</b> Servicio</div><div class="qv2-step-marker" data-qv2-marker="2" role="listitem"><b>2</b> Equipo</div><div class="qv2-step-marker" data-qv2-marker="3" role="listitem"><b>3</b> Contacto</div>
+</div>
+<div class="qv2-progress" aria-hidden="true"><span id="qv2StepProgress"></span></div>
+<div class="qv2-grid">
+<form class="qv2-form" id="emcQuoteV2" novalidate>
+<section class="qv2-pane" data-qv2-pane="1" aria-labelledby="qv2-title1">
+<span class="qv2-eyebrow">PASO 01 · TU NECESIDAD</span><h3 id="qv2-title1">¿Qué necesitas calibrar?</h3><p class="qv2-description">Selecciona el servicio. Te mostraremos los datos más útiles para preparar la cotización.</p>
+<div class="qv2-choices">
+<button type="button" class="qv2-service" data-qv2-service="Calibración de flujo" aria-pressed="false"><span class="qv2-service-icon"><svg viewBox="0 0 32 32"><path d="M3 16h26M7 10v12M25 10v12M11 6h10v20H11z"/><path d="M14 13l4 3-4 3"/><circle cx="16" cy="5" r="2"/></svg></span><span><strong>Calibración de flujo</strong><small>Medidores y caudalímetros</small></span></button>
+<button type="button" class="qv2-service" data-qv2-service="Calibración de presión" aria-pressed="false"><span class="qv2-service-icon"><svg viewBox="0 0 32 32"><circle cx="16" cy="15" r="12"/><path d="M16 15l6-7M16 3v3M4 15h3M25 15h3M16 27v3"/><path d="M10 30h12"/></svg></span><span><strong>Calibración de presión</strong><small>Manómetros y transmisores</small></span></button>
+<button type="button" class="qv2-service" data-qv2-service="Calibración de temperatura" aria-pressed="false"><span class="qv2-service-icon"><svg viewBox="0 0 32 32"><path d="M14 6v15a7 7 0 1 0 6 0V6a3 3 0 0 0-6 0Z"/><path d="M17 11v14M20 12h4M20 16h4"/></svg></span><span><strong>Calibración de temperatura</strong><small>Termómetros y sensores</small></span></button>
+<button type="button" class="qv2-service" data-qv2-service="Unidad de Inspección" aria-pressed="false"><span class="qv2-service-icon"><svg viewBox="0 0 32 32"><path d="M9 3h14l4 4v23H5V3zM23 3v6h4M10 16l4 4 8-9M10 25h13"/></svg></span><span><strong>Unidad de Inspección</strong><small>Sistemas de medición</small></span></button>
+<button type="button" class="qv2-service" data-qv2-service="Montaje y comisionamiento" aria-pressed="false"><span class="qv2-service-icon"><svg viewBox="0 0 32 32"><path d="M3 11h26M7 7v8M25 7v8M12 11v16h8V11M9 27h14M16 3v5"/></svg></span><span><strong>Montaje y comisionamiento</strong><small>Instalación y puesta en marcha</small></span></button>
+</div>
+<input id="servicio" type="hidden">
+<div class="qv2-tip">¿No estás seguro del servicio? Elige el más cercano; nuestro equipo te orientará con los requisitos técnicos.</div>
+<div class="qv2-nav"><button class="qv2-primary" type="button" data-qv2-next="1">Continuar al equipo →</button></div>
+</section>
+<section class="qv2-pane" data-qv2-pane="2" hidden aria-labelledby="qv2-title2">
+<span class="qv2-eyebrow">PASO 02 · FICHA TÉCNICA</span><h3 id="qv2-title2">Háblanos de tu equipo</h3><p class="qv2-description">Con el tipo, la cantidad, marca y modelo podemos evaluar mejor el servicio. Si falta algún dato, puedes continuar.</p>
+<div class="qv2-fields">
+<label class="qv2-field">Tipo de instrumento *<input id="instrumento" required list="qv2-instrumentos" placeholder="Ej. medidor electromagnético" maxlength="120"><datalist id="qv2-instrumentos"></datalist></label>
+<label class="qv2-field">Cantidad de equipos<input id="cantidad" type="number" min="1" max="10000" value="1" inputmode="numeric"></label>
+<label class="qv2-field">Marca<input id="marca" placeholder="Ej. Badger Meter" maxlength="120"></label>
+<label class="qv2-field">Modelo<input id="modelo" placeholder="Ej. M2000" maxlength="120"></label>
+<label class="qv2-field wide">Rango de medición y unidad<input id="rango" placeholder="Ej. 0 a 500 L/min" maxlength="120"></label>
+</div>
+<details class="qv2-details"><summary>+ Agregar información técnica y logística (opcional)</summary>
+<div class="qv2-fields">
+<label class="qv2-field">Número de serie<input id="serie" maxlength="100"></label>
+<label class="qv2-field">Ubicación / planta<input id="ubicacion" placeholder="Ciudad o planta" maxlength="160"></label>
+<label class="qv2-field">Modalidad<select id="modalidad"><option>Por definir</option><option>En laboratorio</option><option>En sitio</option></select></label>
+<label class="qv2-field">Fecha deseada<input id="fecha" type="date"></label>
+<label class="qv2-field wide">Observaciones, conexiones o puntos específicos<textarea id="detalle" rows="3" placeholder="Condición del equipo, fluido, conexión, requisitos del cliente..."></textarea></label>
+</div>
+</details>
+<div class="qv2-tip">¿Tienes una foto de la placa del instrumento? Podrás enviarla directamente por WhatsApp después de iniciar la conversación.</div>
+<div class="qv2-nav"><button type="button" class="qv2-back" data-qv2-back="2">← Volver</button><button class="qv2-primary" type="button" data-qv2-next="2">Continuar al contacto →</button></div>
+</section>
+<section class="qv2-pane" data-qv2-pane="3" hidden aria-labelledby="qv2-title3">
+<span class="qv2-eyebrow">PASO 03 · DATOS DE CONTACTO</span><h3 id="qv2-title3">¿Con quién nos comunicamos?</h3><p class="qv2-description">Solo necesitamos saber quién solicita el servicio y cómo responderle.</p>
+<div class="qv2-fields">
+<label class="qv2-field">Empresa *<input id="empresa" autocomplete="organization" required maxlength="140" placeholder="Nombre de la empresa"></label>
+<label class="qv2-field">Nombre del responsable *<input id="nombre" autocomplete="name" required maxlength="140" placeholder="Tu nombre"></label>
+<label class="qv2-field">WhatsApp / teléfono<input id="telefono" autocomplete="tel" type="tel" inputmode="tel" placeholder="55 1234 5678" maxlength="30"></label>
+<label class="qv2-field">Correo corporativo<input id="correo" autocomplete="email" type="email" placeholder="nombre@empresa.com" maxlength="140"></label>
+<label class="qv2-field wide">Área o puesto (opcional)<input id="puesto" placeholder="Compras, Ingeniería, Calidad..." maxlength="120"></label>
+</div>
+<div class="qv2-tip">Proporciona al menos un medio de contacto: WhatsApp/teléfono o correo.</div>
+<label class="qv2-privacy"><input type="checkbox" id="consent" required><span>Confirmo que deseo compartir esta información con EMC por WhatsApp para recibir atención sobre mi solicitud.</span></label>
+<p class="qv2-help">Al pulsar el botón se abrirá WhatsApp con el mensaje preparado. Puedes revisarlo antes de enviarlo. No enviamos el formulario automáticamente.</p>
+<div class="qv2-nav"><button type="button" class="qv2-back" data-qv2-back="3">← Volver</button><button class="qv2-primary" type="submit">Preparar solicitud en WhatsApp ↗</button></div>
+</section>
+<p id="qv2Message" class="qv2-message" role="status" aria-live="polite"></p>
+</form>
+<aside class="qv2-aside" aria-label="Representación visual y vista previa de tu solicitud">
+<div class="qv2-visual">
+<div class="qv2-visual-head"><span>FICHA TÉCNICA EMC</span><span id="qv2VisualLabel">ELIGE SERVICIO</span></div>
+<div id="qv2Illustration" class="qv2-illustration" aria-live="off"></div>
+<p class="qv2-visual-foot" id="qv2VisualFoot">Representación ilustrativa del instrumento, no una medición real.</p>
+<div class="qv2-progress-bar" aria-hidden="true"><span id="qv2CompletionBar"></span></div>
+<div class="qv2-completeness"><span>Información básica</span><span id="qv2Percent">0 %</span></div>
+</div>
+<div class="qv2-next-check"><strong id="qv2HintTitle">Selecciona el servicio</strong><div id="qv2HintText">Te ayudaremos a organizar los datos necesarios para cotizar.</div></div>
+<div class="qv2-summary">
+<h4>Resumen de tu solicitud</h4>
+<div class="qv2-summary-lines"><p><span>Servicio</span><strong id="qv2SummaryService">Por elegir</strong></p><p><span>Instrumento</span><strong id="qv2SummaryInstrument">Pendiente</strong></p><p><span>Equipos</span><strong id="qv2SummaryQty">1</strong></p><p><span>Contacto</span><strong id="qv2SummaryContact">Pendiente</strong></p></div>
+</div>
+<details class="qv2-message-details"><summary>Ver mensaje que recibirá EMC</summary><pre id="quotePreview"></pre></details>
+<div class="qv2-aside-actions"><button type="button" id="copyQuote">Copiar mensaje</button></div>
+<p class="qv2-aside-note">El manómetro, termómetro o medidor muestran avance de captura, no valores medidos ni resultados de calibración.</p>
+</aside>
+</div>
+</div>
+</section>
+</main><footer class="site-footer">
+<div class="container footer-grid">
+  <div class="footer-brand">
+    <img src="../imagenes/logo.jpg" alt="Easy Metric Calibration">
+    <p>Calibración industrial de flujo, presión y temperatura, con atención técnica para procesos industriales en México.</p>
+  </div>
+  <div>
+    <h3>Servicios</h3>
+    <a href="../servicios/calibracion-flujo/">Calibración de flujo</a>
+    <a href="../servicios/calibracion-presion/">Calibración de presión</a>
+    <a href="../servicios/calibracion-temperatura/">Calibración de temperatura</a>
+    <a href="../servicios/montaje-comisionamiento/">Montaje y comisionamiento</a>
+  </div>
+  <div>
+    <h3>Empresa</h3>
+    <a href="../acreditaciones/">Acreditaciones</a>
+    <a href="../unidad-verificacion/">Unidad de Inspección</a>
+    <a href="../casos-de-exito/">Proyectos</a>
+    <a href="../nosotros/">Nosotros</a>
+  </div>
+  <div>
+    <h3>Contacto</h3>
+    <a href="tel:+525579166300">55 7916 6300</a>
+    <a href="https://wa.me/525579166300?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20con%20Easy%20Metric%20Calibration." target="_blank" rel="noopener">WhatsApp técnico</a>
+    <a href="../herramientas/preparar-cotizacion/">Solicitar cotización</a>
+    <a href="../acreditaciones/#documentos">Documentación</a>
+  </div>
+</div>
+<div class="container footer-bottom">
+  <span>© 2026 Easy Metric Calibration S.A. de C.V.</span>
+  <span>Cuautitlán Izcalli, Estado de México · Atención nacional</span>
+</div>
+</footer>
+<a class="wa-float" href="https://wa.me/525579166300?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20con%20Easy%20Metric%20Calibration." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+<span class="wa-icon">✆</span><span><b>WhatsApp técnico</b><small>Solicita una cotización</small></span>
+</a>
+<div class="chatbot" id="chatbot">
+  <button class="chat-open" id="chatOpen" type="button" aria-label="Abrir asistente técnico">?</button>
+  <button class="chat-invite" id="chatInvite" type="button"><strong>¿Qué necesitas calibrar?</strong><span>Consulta requisitos técnicos</span></button>
+  <div class="chat-window hidden" id="chatWindow" role="dialog" aria-label="Asistente técnico EMC">
+    <div class="chat-head"><div><strong>Asistente EMC</strong><span>Orientación técnica inicial</span></div><button class="chat-close" id="chatClose" type="button" aria-label="Cerrar">×</button></div>
+    <div class="chat-messages" id="chatMessages"><div class="msg"><div class="bubble">Puedo orientarte sobre flujo, presión, temperatura, Unidad de Inspección, certificados y datos necesarios para cotizar.</div></div></div>
+    <div class="quick">
+      <button type="button" data-question="Calibración de flujo">Flujo</button>
+      <button type="button" data-question="Calibración de presión">Presión</button>
+      <button type="button" data-question="Calibración de temperatura">Temperatura</button>
+      <button type="button" data-question="Unidad de Inspección">Inspección</button>
+      <button type="button" data-question="Quiero cotizar">Cotizar</button>
+    </div>
+    <form class="chat-form" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Escribe tu pregunta..." maxlength="300"><button type="submit" aria-label="Enviar">➤</button></form>
+  </div>
+</div>
+<script src="../app.js"></script>
+<script src="../chatbot.js"></script>
+<script id="emc-quote-v2-script">
+(function(){
+'use strict';
+const form=document.getElementById('emcQuoteV2');if(!form)return;
+const $=id=>document.getElementById(id), get=id=>($(id)?.value||'').trim();
+const steps=[...document.querySelectorAll('[data-qv2-pane]')],markers=[...document.querySelectorAll('[data-qv2-marker]')],buttons=[...document.querySelectorAll('[data-qv2-service]')];
+let active=1;
+const templates={
+'Calibración de flujo':{short:'FLUJO',tip:'medidor de flujo',list:['Electromagnético','Coriolis','Ultrasónico','Turbina','Vórtex','Rotámetro'],range:'Ej. 0 a 500 L/min',model:'Ej. Badger Meter M2000',type:'flow'},
+'Calibración de presión':{short:'PRESIÓN',tip:'manómetro',list:['Manómetro','Transmisor de presión','Indicador digital','Vacúometro','Presostato'],range:'Ej. 0 a 200 PSI',model:'Ej. WIKA 232.50',type:'pressure'},
+'Calibración de temperatura':{short:'TEMPERATURA',tip:'sensor de temperatura',list:['RTD PT100','Termopar','Termómetro digital','Termómetro bimetálico','Transmisor de temperatura'],range:'Ej. -20 a 150 °C',model:'Ej. PT100 clase A',type:'temp'},
+'Unidad de Inspección':{short:'INSPECCIÓN',tip:'sistema de medición',list:['Medidor electromagnético','Sistema de medición de agua','Telemetría','Pozo de agua'],range:'Ej. DN100; 0–100 m³/h',model:'Modelo de medidor',type:'verify'},
+'Montaje y comisionamiento':{short:'MONTAJE',tip:'instrumento o sistema',list:['Tren de medición','Medidor de flujo','Sistema de automatización','Tablero de control'],range:'Ej. DN80; 24 VDC',model:'Modelo de equipo',type:'verify'}
+};
+const pressureArt='<svg viewBox="0 0 320 245" role="img" aria-label="Manómetro ilustrativo"><defs><linearGradient id="qv2metal"><stop stop-color="#fff"/><stop offset=".5" stop-color="#c7d5ce"/><stop offset="1" stop-color="#f7fbf7"/></linearGradient></defs><path d="M144 208h32v24h-32z" fill="#668679"/><circle cx="160" cy="127" r="100" fill="#637f73"/><circle cx="160" cy="123" r="94" fill="url(#qv2metal)"/><circle cx="160" cy="123" r="80" fill="#fff" stroke="#cfdfd1" stroke-width="2"/><path d="M103 155A65 65 0 1 1 217 155" stroke="#d9e9d8" stroke-width="10" fill="none"/><path d="M103 155A65 65 0 1 1 217 155" id="qv2GaugeProgress" stroke="#499857" stroke-width="8" stroke-linecap="round" fill="none" stroke-dasharray="0 210"/><g id="qv2Needle" transform="rotate(-110 160 123)"><path d="M160 123L161 67" stroke="#236740" stroke-width="5" stroke-linecap="round"/></g><circle cx="160" cy="123" r="8" fill="#285e3b"/><text x="160" y="181" text-anchor="middle" font-size="12" fill="#5f7c64" font-weight="700">AVANCE DE FICHA</text><text x="160" y="201" text-anchor="middle" font-size="15" fill="#2f7147" font-weight="800">EMC</text></svg>';
+const tempArt='<svg viewBox="0 0 320 245" role="img" aria-label="Termómetro ilustrativo"><defs><linearGradient id="qv2tempGrad" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#327b56"/><stop offset="1" stop-color="#a0d48d"/></linearGradient></defs><rect x="125" y="26" width="70" height="185" rx="35" fill="#e7eee8" stroke="#a6c6aa" stroke-width="4"/><rect x="145" y="43" width="30" height="130" rx="15" fill="white"/><clipPath id="qv2tClip"><rect x="146" y="44" width="28" height="128" rx="13"/></clipPath><rect id="qv2tFill" x="146" y="172" width="28" height="0" clip-path="url(#qv2tClip)" fill="url(#qv2tempGrad)"/><circle cx="160" cy="188" r="24" fill="#3f9559"/><circle cx="160" cy="188" r="12" fill="#69b778"/><g stroke="#8ba994" stroke-width="2"><path d="M195 58h21M195 85h14M195 113h21M195 141h14"/></g><text x="220" y="195" font-size="12" fill="#51765b">EMC</text></svg>';
+const flowArt='<svg viewBox="0 0 320 245" role="img" aria-label="Medidor de flujo electromagnético ilustrativo"><defs><linearGradient id="qv2pipeGrad" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#dce7e5"/><stop offset=".5" stop-color="#6b898e"/><stop offset="1" stop-color="#eaf4ee"/></linearGradient></defs><path d="M20 133H300" stroke="#728e90" stroke-width="53" stroke-linecap="round"/><path d="M20 133H300" stroke="url(#qv2pipeGrad)" stroke-width="40" stroke-linecap="round"/><rect x="95" y="91" width="130" height="84" rx="15" fill="#246894" stroke="#194c6d" stroke-width="5"/><rect x="108" y="101" width="105" height="63" rx="8" fill="#3b8dba"/><path d="M151 91v-20h18v20" fill="#387ba3"/><rect x="122" y="34" width="76" height="46" rx="7" fill="#1d475a"/><rect x="131" y="43" width="58" height="28" rx="3" fill="#d9f3ee"/><text x="160" y="61" font-size="11" text-anchor="middle" font-weight="800" fill="#37714b">EMC</text><path d="M49 134h224" stroke="#76c9d6" stroke-width="3" stroke-dasharray="9 15" id="qv2FlowLine"/><text x="160" y="221" font-size="13" text-anchor="middle" fill="#497451" font-weight="700">MEDIDOR DE FLUJO</text></svg>';
+const otherArt='<svg viewBox="0 0 320 245" role="img" aria-label="Instrumentación técnica ilustrativa"><path d="M93 45h134v173H93z" rx="14" fill="#eef6ef" stroke="#9fc4a7" stroke-width="5"/><path d="M126 77h69M126 113h53M126 145h58" stroke="#9bc5a2" stroke-width="7" stroke-linecap="round"/><circle cx="218" cy="175" r="30" fill="#4b965b"/><path d="m203 175 11 11 21-24" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>';
+const ascii='Hola, solicito una cotización con Easy Metric Calibration.';
+function makeMessage(){
+ const def=(id,fallback)=>get(id)||fallback;
+ return [ascii,'','DATOS DE CONTACTO','Empresa: '+def('empresa','No indicada'),'Responsable: '+def('nombre','No indicado'),'Área/Puesto: '+def('puesto','No indicado'),'Teléfono: '+def('telefono','No indicado'),'Correo: '+def('correo','No indicado'),'','DATOS TÉCNICOS','Servicio: '+def('servicio','Por definir'),'Instrumento: '+def('instrumento','No indicado'),'Cantidad: '+def('cantidad','No indicada'),'Marca: '+def('marca','No indicada'),'Modelo: '+def('modelo','No indicado'),'Serie: '+def('serie','No indicada'),'Rango y unidad: '+def('rango','No indicado'),'Ubicación: '+def('ubicacion','No indicada'),'Modalidad: '+def('modalidad','Por definir'),'Fecha requerida: '+def('fecha','Por definir'),'','DETALLES',def('detalle','Sin comentarios adicionales')].join('\n');
+}
+function progressValue(){let total=0;if(get('servicio'))total+=23;if(get('instrumento'))total+=23;if(get('empresa'))total+=19;if(get('nombre'))total+=19;if(get('telefono')||get('correo'))total+=16;return Math.min(100,total);}
+function repaint(){
+ const value=progressValue(),service=get('servicio'),template=templates[service]||{short:'COTIZACIÓN',type:'verify'};
+ $('qv2Percent').textContent=value+' %';$('qv2CompletionBar').style.width=value+'%';
+ $('qv2VisualLabel').textContent=template.short;
+ $('qv2VisualFoot').textContent='Indicador visual de avance, no lectura real del instrumento.';
+ const desired=template.type==='pressure'?pressureArt:template.type==='temp'?tempArt:template.type==='flow'?flowArt:otherArt;
+ const image=$('qv2Illustration');if(image.dataset.type!==template.type){image.innerHTML=desired;image.dataset.type=template.type;}
+ const needle=$('qv2Needle');if(needle)needle.setAttribute('transform','rotate('+(-110+value*2.2)+' 160 123)');
+ const path=$('qv2GaugeProgress');if(path)path.setAttribute('stroke-dasharray',(210*value/100)+' 210');
+ const temp=$('qv2tFill');if(temp){let h=Math.round(128*value/100);temp.setAttribute('y',String(172-h));temp.setAttribute('height',String(h));}
+ const flow=$('qv2FlowLine');if(flow)flow.style.opacity=String(Math.max(.2,value/100));
+ $('qv2SummaryService').textContent=service||'Por elegir';$('qv2SummaryInstrument').textContent=get('instrumento')||'Pendiente';$('qv2SummaryQty').textContent=get('cantidad')||'1';$('qv2SummaryContact').textContent=get('nombre')||'Pendiente';
+ let hintTitle='Selecciona el servicio',hint='Elegiremos los datos más relevantes para tu cotización.';
+ if(service&&!get('instrumento')){hintTitle='¿Qué instrumento tienes?';hint='Conocer el tipo de equipo es esencial para revisarlo.';}
+ else if(get('instrumento')&&(!get('empresa')||!get('nombre'))){hintTitle='Solo faltan tus datos';hint='Añade empresa, responsable y cómo contactarte.';}
+ else if(get('empresa')&&get('nombre')&&!(get('telefono')||get('correo'))){hintTitle='¿Cómo te respondemos?';hint='Indica un teléfono o correo para dar seguimiento.';}
+ else if(value===100){hintTitle='Solicitud lista';hint='Puedes añadir más detalles técnicos o abrir WhatsApp.';}
+ $('qv2HintTitle').textContent=hintTitle;$('qv2HintText').textContent=hint;
+ $('quotePreview').textContent=makeMessage();
+}
+function setStep(next){
+ active=next;steps.forEach(node=>node.hidden=Number(node.dataset.qv2Pane)!==active);
+ markers.forEach(node=>{const n=Number(node.dataset.qv2Marker);node.classList.toggle('is-active',n===active);node.classList.toggle('is-done',n<active);});
+ $('qv2StepProgress').style.width=(active/3*100)+'%';$('qv2Message').textContent='';
+ const top=$('emcQuoteV2').getBoundingClientRect().top+window.scrollY-145;if(window.scrollY>top+350)window.scrollTo({top:Math.max(0,top),behavior:'smooth'});
+ repaint();
+}
+function setService(service){
+ $('servicio').value=service;
+ buttons.forEach(button=>{const pressed=button.dataset.qv2Service===service;button.classList.toggle('is-selected',pressed);button.setAttribute('aria-pressed',String(pressed));});
+ const template=templates[service];if(template){$('rango').placeholder=template.range;$('modelo').placeholder=template.model;$('instrumento').placeholder='Ej. '+template.tip;
+ $('qv2-instrumentos').innerHTML='';template.list.forEach(name=>{const opt=document.createElement('option');opt.value=name;$('qv2-instrumentos').appendChild(opt);});
+ }
+ repaint();
+}
+function problem(text,field){$('qv2Message').textContent=text;if(field){field.classList.add('is-invalid');field.focus();}return false;}
+function validate(step){
+ $('qv2Message').textContent='';
+ if(step===1&&!get('servicio'))return problem('Selecciona el servicio que necesitas.');
+ if(step===2){
+  if(!get('instrumento'))return problem('Indica qué instrumento necesitas calibrar.',$('instrumento'));
+  const qty=Number(get('cantidad'));if(!Number.isInteger(qty)||qty<1||qty>10000)return problem('Indica una cantidad válida de 1 a 10,000 equipos.',$('cantidad'));
+ }
+ if(step===3){
+  if(!get('empresa'))return problem('Indica el nombre de la empresa.',$('empresa'));
+  if(!get('nombre'))return problem('Indica el nombre del responsable.',$('nombre'));
+  if(!get('telefono')&&!get('correo'))return problem('Indica al menos un teléfono o un correo.',$('telefono'));
+  const email=$('correo');if(email.value.trim()&&!email.checkValidity())return problem('Revisa el formato del correo electrónico.',email);
+  if(!$('consent').checked)return problem('Confirma que deseas compartir estos datos por WhatsApp.',$('consent'));
+ }
+ return true;
+}
+buttons.forEach(button=>button.addEventListener('click',()=>setService(button.dataset.qv2Service)));
+document.querySelectorAll('[data-qv2-next]').forEach(button=>button.addEventListener('click',()=>{if(validate(active))setStep(Math.min(3,active+1));}));
+document.querySelectorAll('[data-qv2-back]').forEach(button=>button.addEventListener('click',()=>setStep(Math.max(1,active-1))));
+form.addEventListener('input',event=>{event.target.classList?.remove('is-invalid');repaint();});
+form.addEventListener('change',repaint);
+form.addEventListener('submit',event=>{
+ event.preventDefault();if(!validate(1)){setStep(1);validate(1);return}if(!validate(2)){setStep(2);validate(2);return}if(!validate(3))return;
+ const url='https://wa.me/525579166300?text='+encodeURIComponent(makeMessage());
+ if(typeof window.fbq==='function')window.fbq('track','Lead',{content_name:'Solicitud EMC V2',content_category:get('servicio')});
+ $('qv2Message').style.color='#317545';$('qv2Message').textContent='Mensaje preparado. WhatsApp se abrirá en otra pestaña; confirma el envío ahí.';
+ const anchor=document.createElement('a');anchor.href=url;anchor.target='_blank';anchor.rel='noopener';document.body.appendChild(anchor);anchor.click();anchor.remove();
+});
+$('copyQuote').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(makeMessage());$('copyQuote').textContent='Mensaje copiado';setTimeout(()=>$('copyQuote').textContent='Copiar mensaje',1700)}catch{document.querySelector('.qv2-message-details').open=true;$('qv2Message').textContent='Selecciona y copia el mensaje mostrado en la vista previa.';}});
+const qp=new URLSearchParams(location.search).get('servicio');if(qp){let option=Object.keys(templates).find(x=>x.toLowerCase()===qp.toLowerCase());if(option)setService(option);}
+setStep(1);repaint();
+})();
+</script></body></html>
