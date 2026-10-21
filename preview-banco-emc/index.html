@@ -283,6 +283,13 @@
  root.querySelectorAll('[data-emc-slide]').forEach(button=>button.addEventListener('click',()=>show(at+(button.dataset.emcSlide==='prev'?-1:1))));
  dots.forEach((dot,i)=>dot.addEventListener('click',()=>show(i)));
  root.addEventListener('keydown',event=>{if(event.key==='ArrowRight')show(at+1);if(event.key==='ArrowLeft')show(at-1)});
+ // Movimiento discreto: solo si la galería está visible y no se interactúa con ella.
+ const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ let visible=true, paused=false;
+ if('IntersectionObserver' in window){new IntersectionObserver(entries=>{visible=entries.some(e=>e.isIntersecting)},{threshold:.2}).observe(root);}
+ root.addEventListener('pointerenter',()=>{paused=true});root.addEventListener('pointerleave',()=>{paused=false});
+ root.addEventListener('focusin',()=>{paused=true});root.addEventListener('focusout',()=>{paused=false});
+ if(!reduced){window.setInterval(()=>{if(visible&&!paused&&!document.hidden)show(at+1)},6500);}
  show(0);
 })();
 </script></body></html>
